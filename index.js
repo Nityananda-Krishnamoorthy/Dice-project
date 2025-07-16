@@ -6,8 +6,10 @@ function rollDice() {
     document.getElementsByClassName("img2")[0].setAttribute("src", "images/dice" + randomNumber2 + ".png");
     if (randomNumber1 > randomNumber2) {
     document.querySelector("h1").innerHTML = "🚩 Player 1 Wins!";
+    document.querySelector("h1").style.color = "#4ECCA3";
     }   else if (randomNumber2 > randomNumber1) {
     document.querySelector("h1").innerHTML = "Player 2 Wins! 🚩";
+    document.querySelector("h1").style.color = "#4ECCA3";
     }
 else {
     document.querySelector("h1").innerHTML = "Draw!";
